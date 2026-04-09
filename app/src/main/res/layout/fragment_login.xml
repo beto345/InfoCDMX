@@ -9,9 +9,7 @@
     android:background="#FFFFFF"
     tools:context=".LoginFragment">
 
-    <!-- ================================ -->
-    <!-- HEADER CON COLOR (parte superior)-->
-    <!-- ================================ -->
+
     <View
         android:id="@+id/headerBackground"
         android:layout_width="0dp"
@@ -23,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Icono superior (32 x 32 dp) — inicio de cadena vertical -->
+
     <ImageView
         android:id="@+id/imageViewLogo"
         android:layout_width="32dp"
@@ -39,7 +37,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/graduation" />
 
-    <!-- Titulo: Bienvenido! -->
+
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="0dp"
@@ -55,7 +53,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
-    <!-- Subtitulo -->
+
     <TextView
         android:id="@+id/textViewSubtitle"
         android:layout_width="0dp"
@@ -69,11 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
-    <!-- ================================ -->
-    <!-- CAMPOS DE FORMULARIO             -->
-    <!-- ================================ -->
 
-    <!-- Guideline horizontal al 45% para separar header de formulario -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHeader"
         android:layout_width="wrap_content"
@@ -81,7 +75,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.42" />
 
-    <!-- Campo: Correo -->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -104,7 +98,7 @@
             android:imeOptions="actionNext" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Campo: Contraseña -->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -128,7 +122,7 @@
             android:imeOptions="actionDone" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Boton: Ingresar -->
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonLogin"
         android:layout_width="0dp"
@@ -146,11 +140,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
 
-    <!-- ================================ -->
-    <!-- LINKS INFERIORES (pegados abajo) -->
-    <!-- ================================ -->
 
-    <!-- Registrarse (izquierda, fondo) -->
     <TextView
         android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
@@ -165,7 +155,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Restablecer contraseña (derecha, fondo) -->
+
     <TextView
         android:id="@+id/textViewForgotPassword"
         android:layout_width="wrap_content"
